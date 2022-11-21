@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		C7BEE2D9292B6C21002ADDC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BEE2D8292B6C21002ADDC7 /* AppDelegate.swift */; };
 		C7BEE2DB292B6C21002ADDC7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BEE2DA292B6C21002ADDC7 /* SceneDelegate.swift */; };
-		C7BEE2DD292B6C21002ADDC7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BEE2DC292B6C21002ADDC7 /* ViewController.swift */; };
 		C7BEE2E0292B6C21002ADDC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7BEE2DE292B6C21002ADDC7 /* Main.storyboard */; };
 		C7BEE2E3292B6C21002ADDC7 /* swift_example_viper.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C7BEE2E1292B6C21002ADDC7 /* swift_example_viper.xcdatamodeld */; };
 		C7BEE2E5292B6C23002ADDC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7BEE2E4292B6C23002ADDC7 /* Assets.xcassets */; };
@@ -17,6 +16,13 @@
 		C7BEE2F3292B6C23002ADDC7 /* swift_example_viperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BEE2F2292B6C23002ADDC7 /* swift_example_viperTests.swift */; };
 		C7BEE2FD292B6C23002ADDC7 /* swift_example_viperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BEE2FC292B6C23002ADDC7 /* swift_example_viperUITests.swift */; };
 		C7BEE2FF292B6C23002ADDC7 /* swift_example_viperUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BEE2FE292B6C23002ADDC7 /* swift_example_viperUITestsLaunchTests.swift */; };
+		C7BEE30E292B724A002ADDC7 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BEE30D292B724A002ADDC7 /* HomeTableViewController.swift */; };
+		C7BEE310292B74B8002ADDC7 /* UserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BEE30F292B74B8002ADDC7 /* UserEntity.swift */; };
+		C7BEE312292B7608002ADDC7 /* HomeTablePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BEE311292B7608002ADDC7 /* HomeTablePresenter.swift */; };
+		C7BEE314292B77D0002ADDC7 /* HomeTableInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BEE313292B77D0002ADDC7 /* HomeTableInteractor.swift */; };
+		C7BEE316292B78B7002ADDC7 /* HomeTableRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BEE315292B78B7002ADDC7 /* HomeTableRouter.swift */; };
+		C7BEE318292B7947002ADDC7 /* HomeTableConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BEE317292B7947002ADDC7 /* HomeTableConfigurator.swift */; };
+		C7BEE31B292B7E49002ADDC7 /* NetworkExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BEE31A292B7E49002ADDC7 /* NetworkExt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +46,6 @@
 		C7BEE2D5292B6C21002ADDC7 /* swift-example-viper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-example-viper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7BEE2D8292B6C21002ADDC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7BEE2DA292B6C21002ADDC7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C7BEE2DC292B6C21002ADDC7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C7BEE2DF292B6C21002ADDC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C7BEE2E2292B6C21002ADDC7 /* swift_example_viper.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = swift_example_viper.xcdatamodel; sourceTree = "<group>"; };
 		C7BEE2E4292B6C23002ADDC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +56,13 @@
 		C7BEE2F8292B6C23002ADDC7 /* swift-example-viperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swift-example-viperUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7BEE2FC292B6C23002ADDC7 /* swift_example_viperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_example_viperUITests.swift; sourceTree = "<group>"; };
 		C7BEE2FE292B6C23002ADDC7 /* swift_example_viperUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_example_viperUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C7BEE30D292B724A002ADDC7 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		C7BEE30F292B74B8002ADDC7 /* UserEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEntity.swift; sourceTree = "<group>"; };
+		C7BEE311292B7608002ADDC7 /* HomeTablePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTablePresenter.swift; sourceTree = "<group>"; };
+		C7BEE313292B77D0002ADDC7 /* HomeTableInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableInteractor.swift; sourceTree = "<group>"; };
+		C7BEE315292B78B7002ADDC7 /* HomeTableRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableRouter.swift; sourceTree = "<group>"; };
+		C7BEE317292B7947002ADDC7 /* HomeTableConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableConfigurator.swift; sourceTree = "<group>"; };
+		C7BEE31A292B7E49002ADDC7 /* NetworkExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkExt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +113,9 @@
 		C7BEE2D7292B6C21002ADDC7 /* swift-example-viper */ = {
 			isa = PBXGroup;
 			children = (
-				C7BEE2D8292B6C21002ADDC7 /* AppDelegate.swift */,
-				C7BEE2DA292B6C21002ADDC7 /* SceneDelegate.swift */,
-				C7BEE2DC292B6C21002ADDC7 /* ViewController.swift */,
+				C7BEE319292B7E39002ADDC7 /* Utilities */,
+				C7BEE30C292B6CF8002ADDC7 /* Home */,
+				C7BEE30B292B6CD9002ADDC7 /* App */,
 				C7BEE2DE292B6C21002ADDC7 /* Main.storyboard */,
 				C7BEE2E4292B6C23002ADDC7 /* Assets.xcassets */,
 				C7BEE2E6292B6C23002ADDC7 /* LaunchScreen.storyboard */,
@@ -128,6 +140,36 @@
 				C7BEE2FE292B6C23002ADDC7 /* swift_example_viperUITestsLaunchTests.swift */,
 			);
 			path = "swift-example-viperUITests";
+			sourceTree = "<group>";
+		};
+		C7BEE30B292B6CD9002ADDC7 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C7BEE2D8292B6C21002ADDC7 /* AppDelegate.swift */,
+				C7BEE2DA292B6C21002ADDC7 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C7BEE30C292B6CF8002ADDC7 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C7BEE30D292B724A002ADDC7 /* HomeTableViewController.swift */,
+				C7BEE30F292B74B8002ADDC7 /* UserEntity.swift */,
+				C7BEE311292B7608002ADDC7 /* HomeTablePresenter.swift */,
+				C7BEE313292B77D0002ADDC7 /* HomeTableInteractor.swift */,
+				C7BEE315292B78B7002ADDC7 /* HomeTableRouter.swift */,
+				C7BEE317292B7947002ADDC7 /* HomeTableConfigurator.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C7BEE319292B7E39002ADDC7 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				C7BEE31A292B7E49002ADDC7 /* NetworkExt.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,10 +303,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7BEE2DD292B6C21002ADDC7 /* ViewController.swift in Sources */,
+				C7BEE318292B7947002ADDC7 /* HomeTableConfigurator.swift in Sources */,
+				C7BEE314292B77D0002ADDC7 /* HomeTableInteractor.swift in Sources */,
+				C7BEE310292B74B8002ADDC7 /* UserEntity.swift in Sources */,
+				C7BEE312292B7608002ADDC7 /* HomeTablePresenter.swift in Sources */,
 				C7BEE2D9292B6C21002ADDC7 /* AppDelegate.swift in Sources */,
 				C7BEE2E3292B6C21002ADDC7 /* swift_example_viper.xcdatamodeld in Sources */,
 				C7BEE2DB292B6C21002ADDC7 /* SceneDelegate.swift in Sources */,
+				C7BEE30E292B724A002ADDC7 /* HomeTableViewController.swift in Sources */,
+				C7BEE31B292B7E49002ADDC7 /* NetworkExt.swift in Sources */,
+				C7BEE316292B78B7002ADDC7 /* HomeTableRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
