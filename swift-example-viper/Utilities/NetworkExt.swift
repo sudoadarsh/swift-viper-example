@@ -12,6 +12,12 @@ enum CustomError: Error {
     case invalidURL, invalidData
 }
 
+/// Constant urls.
+
+struct UrlC {
+    static let users: URL? = URL(string: "https://fd2d405a-b572-4c14-ba12-0031176d34cd.mock.pstmn.io/users")
+}
+
 extension URLSession {
     
     func request<T: Codable>(url: URL?, expecting: T.Type, completion: @escaping (Result<T, Error>) -> Void) {

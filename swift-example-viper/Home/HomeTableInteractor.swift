@@ -12,6 +12,26 @@ protocol HomeTableInteractorDelegate: AnyObject {
     func userFetch()
 }
 
-class HomeTableInteractor {
+class HomeTableInteractor: HomeTableInteractorDelegate {
     
+    // MARK: Properties.
+    
+    // A presenter object that holds a weak reference to the [HomeTableViewListenerDelegate].
+    weak var listener: HomeTableListenerDelegate!
+    
+    // MARK: HomeTableInteractorDelegate.
+    
+    func userFetch() {
+        
+        URLSession.shared.request(url: UrlC.users, expecting: [UserEntity].self) { result in
+            switch (result) {
+            case .failure(let err):
+                self.listener.userFetchFailed(error: err)
+                break
+            case .success(let users):
+                self.listener.userFetchSuccess(users: users)
+                break
+            }
+        }
+    }
 }
