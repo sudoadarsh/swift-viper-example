@@ -16,7 +16,20 @@ class HomeTableConfigurator {
     static let instance: HomeTableConfigurator = HomeTableConfigurator()
     
     // MARK: - Methods.
-    func configure() {
+    func configure(viewController: HomeTableViewController) {
+        let presenter = HomeTablePresenter()
+        viewController.presenter = presenter
         
+        let interactor = HomeTableInteractor()
+        interactor.listener = presenter
+        
+        let router = HomeTableRouter()
+        viewController.router = router
+        
+        presenter.interactor = interactor
+        presenter.viewDelegate = viewController
+        router.vc = viewController
     }
+    
+    
 }

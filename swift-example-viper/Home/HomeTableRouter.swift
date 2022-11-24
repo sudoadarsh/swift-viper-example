@@ -13,5 +13,5 @@ class HomeTableRouter {
     // MARK: - Properties.
     
     // A View controller object that holds reference to the [HomeTableViewController].
-    var vc: HomeTableViewController!
+    weak var vc: HomeTableViewController!
 }

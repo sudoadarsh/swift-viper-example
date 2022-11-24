@@ -20,10 +20,20 @@ class HomeTableViewController: UITableViewController {
     
     var users: [UserEntity] = []
     
+    var presenter: HomeTablePresenterDelegate!
+    
+    weak var router: HomeTableRouter!
+    
     // MARK: - View life cycle.
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Configuring the viper.
+        HomeTableConfigurator.instance.configure(viewController: self)
+        
+        // Fetch the data.
+        presenter.getUsers()
 
     }
 
@@ -49,8 +59,10 @@ extension HomeTableViewController: HomeTableViewDelegate {
     // MARK: HomeTableViewDelegate.
     
     func displayUsers(users: [UserEntity]) {
-        self.users = users
-        tableView.reloadData()
+        DispatchQueue.main.async {
+            self.users = users
+            self.tableView.reloadData()
+        }
     }
     
     func displayError(error: Error) {
